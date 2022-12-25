@@ -82,8 +82,11 @@ ul {
 	font-weight: 500;
 }
 
-.navbar ul li:hover,
-.navbar ul li:first-child {
+.navbar ul li:hover {
+	color: var(--primary-color);
+}
+
+.text-primary-color {
 	color: var(--primary-color);
 }
 
