@@ -113,7 +113,29 @@ a {
 	font-weight: 500;
 }
 
-@media (max-width: 900px) {
+/* about page */
+.about-content {
+	padding-right: 50px;
+}
+.about-content h1 {
+	font-size: 64px;
+	line-height: 85px;
+	color: black;
+}
+
+.about-content h2 {
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.about-content p {
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--text-soft);
+	line-height: 36px;
+}
+
+@media (max-width: 992px) {
 	.custom-btn {
 		padding: 10px 20px;
 	}
@@ -145,5 +167,25 @@ a {
 
 	.project a {
 		margin: auto;
+	}
+
+	/* about page */
+	.about-content {
+		text-align: center;
+		padding-right: 0;
+	}
+
+	.about-content h1 {
+		font-size: 54px;
+		padding-inline: 20px;
+		line-height: 65px;
+	}
+
+	.about-content h2 {
+		line-height: 14px;
+	}
+
+	.about-content p {
+		line-height: 26px;
 	}
 }
