@@ -26,6 +26,7 @@ p {
 a {
 	text-decoration: none;
 	color: inherit;
+	cursor: pointer;
 }
 
 ul {
@@ -195,9 +196,68 @@ ul {
 }
 
 /* contact page */
-
 .contact-content h1 {
 	font-size: 64px;
+}
+
+/* footer section */
+footer {
+	margin-top: 90px;
+}
+footer .container .top {
+	width: 100%;
+	background-color: var(--secondary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+footer .container .top .left h2 {
+	font-size: 48px;
+	font-family: var(--font-title);
+}
+
+footer .container .top .left p {
+	color: var(--text-soft);
+	font-weight: 500;
+}
+
+.footer-email {
+	font-size: 24px;
+	color: black;
+	line-height: 36px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.footer-email a:hover {
+	color: var(--primary-color);
+}
+
+footer ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+}
+
+footer ul li {
+	width: 40px;
+	height: 40px;
+	background-color: var(--secondary-color);
+	padding: 10px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer ul li a img {
+	width: 20px;
+	height: 20px;
+	color: var(--primary-color);
+	background-color: var(--secondary-color);
 }
 
 @media (max-width: 992px) {
