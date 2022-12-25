@@ -260,6 +260,16 @@ footer ul li a img {
 	background-color: var(--secondary-color);
 }
 
+.license {
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.open-src {
+	color: blue;
+	text-decoration: underline;
+}
+
 @media (max-width: 992px) {
 	.custom-btn {
 		padding: 10px 20px;
