@@ -28,6 +28,10 @@ a {
 	color: inherit;
 }
 
+ul {
+	list-style: none;
+}
+
 .custom-btn {
 	background: var(--primary-color);
 	color: white;
@@ -53,7 +57,37 @@ a {
 	background-color: var(--primary-color);
 	color: white;
 }
+/* header navbar */
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 5rem;
+	padding-inline: 2rem;
+}
 
+.logo {
+	display: flex;
+	align-items: center;
+}
+.logo img {
+	max-height: 40px;
+	object-fit: cover;
+}
+
+.navbar ul {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	font-weight: 500;
+}
+
+.navbar ul li:hover,
+.navbar ul li:first-child {
+	color: var(--primary-color);
+}
+
+/* home page */
 .header {
 	background-color: var(--secondary-color);
 	height: 90vh;
