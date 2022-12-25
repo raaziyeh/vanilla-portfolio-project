@@ -2,6 +2,9 @@
 	--primary-color: #6c63ff;
 	--secondary-color: #f9f7fe;
 	--text-black: #272142;
+	--text-soft: rgba(39, 33, 66, 0.7);
+	--font-title: "Playfair Display", serif;
+	--font-main: "Poppins", sans-serif;
 }
 
 body,
@@ -9,14 +12,15 @@ body,
 	margin: 0;
 	padding: 0;
 	color: var(--text-black);
+	box-sizing: border-box;
 }
 
 h1 {
-	font-family: "Playfair Display", serif;
+	font-family: var(--font-title);
 }
 
 p {
-	font-family: "Poppins", sans-serif;
+	font-family: var(--font-main);
 }
 
 a {
@@ -35,22 +39,29 @@ a {
 	cursor: pointer;
 }
 
+.custom-btn-complementary {
+	color: var(--primary-color);
+	background-color: inherit;
+	border: 1px solid var(--primary-color);
+}
+
 .custom-btn:hover {
 	color: black;
 }
 
-.header {
-	background-color: var(--secondary-color);
-	width: 100%;
-	height: 90vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 20px;
+.custom-btn-complementary:hover {
+	background-color: var(--primary-color);
+	color: white;
 }
 
-.header span {
+.header {
+	background-color: var(--secondary-color);
+	height: 90vh;
+	padding: 20vh 20px;
+	text-align: center;
+}
+
+.header p {
 	font-size: 32px;
 	font-weight: bold;
 }
@@ -66,18 +77,73 @@ a {
 	font-size: 22px;
 	font-weight: normal;
 	text-align: center;
+	max-width: 100vw;
 }
 
-.header a {
-	margin-top: 30px;
+.projects h2 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 1rem;
+	max-width: 80%;
+	margin-inline: auto;
 }
 
-@media (max-width: 480px) {
-	.header h1 {
-		font-size: 58px;
+.project {
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 30px;
+}
+
+.project .title {
+	font-size: 64px;
+	font-weight: bold;
+	font-family: var(--font-title);
+}
+
+.project .description {
+	color: var(--text-soft);
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.project a {
+	font-weight: 500;
+}
+
+@media (max-width: 900px) {
+	.custom-btn {
+		padding: 10px 20px;
 	}
 
-	.header a {
-		margin-top: 40px;
+	.header {
+		padding: 8vh 20px;
+	}
+
+	.header p {
+		font-size: 24px;
+	}
+
+	.header h1 {
+		font-size: 48px;
+	}
+
+	.header h2 {
+		font-size: 20px;
+	}
+
+	.project {
+		text-align: center;
+	}
+
+	.project .title {
+		font-size: 38px;
+		align-self: center;
+	}
+
+	.project a {
+		margin: auto;
 	}
 }
