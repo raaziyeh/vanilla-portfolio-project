@@ -157,6 +157,12 @@ a {
 	font-size: 14px;
 }
 
+/* contact page */
+
+.contact-content h1 {
+	font-size: 64px;
+}
+
 @media (max-width: 992px) {
 	.custom-btn {
 		padding: 10px 20px;
@@ -209,5 +215,9 @@ a {
 
 	.about-content p {
 		line-height: 26px;
+	}
+
+	.contact-content {
+		text-align: center;
 	}
 }
