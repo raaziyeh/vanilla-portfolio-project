@@ -327,4 +327,26 @@ footer ul li a img {
 	.contact-content {
 		text-align: center;
 	}
+
+	/* footer section */
+	footer .container .top {
+		padding: 20px;
+	}
+
+	footer .container .top .left h2 {
+		font-size: 24px;
+	}
+
+	footer .container .top .left p {
+		font-size: 14px;
+	}
+
+	footer .container .top .right a {
+		padding: 5px 10px;
+		font-size: 16px;
+	}
+
+	.footer-email {
+		font-size: 18px;
+	}
 }
